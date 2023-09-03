@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pokédex</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+	</head>
+	<body>
+		<section class="hero-section">
+			<div class="container">
+				<h1 class="cta-hero">Pesquise os seus <span class="pokemon-word">Pokemons</span> favoritos</h1>
+				<h2 class="subtitle-text-hero">Explore, Capture e Batalhe</h2>
+			</div>
+		</section>
+		<main>
+			<div class="search-container">
+				<div class="search-content">
+					<input
+						type="text"
+						placeholder="Charizard"
+						spellcheck="false"
+						id="input-search"
+					/>
+					<button
+						disabled
+						class="btn-search"
+						id="btn-search"
+					>
+						<span class="material-symbols-outlined"> search </span>
+					</button>
+				</div>
+			</div>
+
+			<section class="main-container">
+				<div class="controls-page">
+					<button
+						class="btn-control-pages hide"
+						id="btn-previous"
+					>
+						<span class="material-symbols-outlined"> arrow_back </span>
+						Voltar
+					</button>
+					<button
+						class="btn-control-pages"
+						id="btn-next"
+					>
+						Próxima
+						<span class="material-symbols-outlined"> arrow_forward </span>
+					</button>
+				</div>
+
+				<div
+					class="list-pokemons"
+					id="PokemonList"
+				></div>
+			</section>
+		</main>
+	</body>
+</html>
